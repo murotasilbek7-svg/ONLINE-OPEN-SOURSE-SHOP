@@ -10,3 +10,4 @@ class CategoryAdmin (admin.ModelAdmin):
 class ProductAdmin (admin.ModelAdmin):
     list_display =  ['name', 'category', 'price', 'available', 'created', 'updated']
     list_filter = ['available', 'created', 'updated', 'category']
+    list_editable = ['price', 'available']
